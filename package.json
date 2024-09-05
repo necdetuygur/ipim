@@ -1,6 +1,6 @@
 {
   "name": "ipim",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Show simple local ip address",
   "main": "index.js",
   "bin": {
@@ -15,12 +15,15 @@
     "url": "git+https://github.com/necdetuygur/ipim.git"
   },
   "keywords": [
-    "internal local ip"
+    "internal external local remote ip"
   ],
   "author": "Necdet UYGUR <necdet.uygur@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/necdetuygur/ipim/issues"
   },
-  "homepage": "https://github.com/necdetuygur/ipim#readme"
+  "homepage": "https://github.com/necdetuygur/ipim#readme",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
 }
