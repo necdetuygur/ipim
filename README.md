@@ -1,8 +1,8 @@
 # ipim
 
-Show simple local ip address
+Show simple local and remote ip addresses
 
-``` sh
+```sh
 $ sudo npm install -g ipim
 # or
 $ npm install -g ipim
