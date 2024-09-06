@@ -1,6 +1,6 @@
 {
   "name": "ipim",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Show simple local ip address",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,11 @@
     "url": "git+https://github.com/necdetuygur/ipim.git"
   },
   "keywords": [
-    "internal external local remote ip"
+    "internal",
+    "external",
+    "local",
+    "remote",
+    "ip"
   ],
   "author": "Necdet UYGUR <necdet.uygur@gmail.com>",
   "license": "MIT",
