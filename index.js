@@ -1,5 +1,5 @@
 const local = require("./lib/local");
-const remote = require("./lib/remote");
+const { ifconfig, ipifyV4, ipifyV6 } = require("./lib/remote");
 
 (async () => {
   let result = "";
@@ -16,13 +16,21 @@ const remote = require("./lib/remote");
 })();
 
 (async () => {
-  let result = "";
+  let ifconfig_ = "";
+  let ipifyV4_ = "";
+  let ipifyV6_ = "";
   try {
-    result = await remote();
+    ifconfig_ = await ifconfig();
+    ipifyV4_ = await ipifyV4();
+    ipifyV6_ = await ipifyV6();
   } catch (error) {
-    result = error;
+    ifconfig_ = error;
+    ipifyV4_ = error;
+    ipifyV6_ = error;
   }
   console.log("Remote");
-  console.log(result);
+  console.log("Ifconfig: \n" + ifconfig_);
+  console.log("IpifyV4: \n" + ipifyV4_);
+  console.log("IpifyV6: \n" + ipifyV6_);
   console.log("");
 })();
