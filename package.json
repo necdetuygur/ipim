@@ -1,6 +1,6 @@
 {
   "name": "ipim",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Show simple local ip address",
   "main": "index.js",
   "bin": {
